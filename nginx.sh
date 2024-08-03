@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo apt update -y
-sudo apt install nginx -y
-sudo systemctl start nginx
-sudo curl www.google.com
+sudo apt install docker.io
+docker pull nginx
+docker run --d --name avinash --image nginx -p 80:80 /bin/bash
