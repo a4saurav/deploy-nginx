@@ -27,8 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: create docker image
-        run: docker build -t avinash1 . 
-        run: docker run -it avinash1 
+        run: |
+          docker build -t avinash1 . 
+          docker run -it avinash1 
         
 
 
